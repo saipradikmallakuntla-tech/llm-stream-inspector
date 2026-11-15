@@ -28,3 +28,14 @@ Fresh live verification completed at **2026-11-14 20:28:16 UTC**: all four sites
 
 ## Historical scope and boundaries
 The hub was unavailable during the original three-app provisioning run; that historical note is not a current outage. The hub is now deployed at the addresses above. This update changes documentation only, not satellite HTML, CSS, or analysis engines. Broader references such as [Zion Tech Group](https://ziontechgroup.com/) and the [original catalog](https://github.com/Zion-support/zion-app-network/blob/main/CATALOG.md) remain separate. No third-party repository, catalog, upstream registration, or DNS setting is modified; outbound references do not imply endorsement.
+
+## Enterprise case studies and reliability benchmarks — 2026-11-15
+
+Illustrative deployment scenarios and reproducible synthetic diagnostics for the existing three utilities, not customer endorsements or production performance claims.
+
+- [English case study](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/case-studies.html#sse)
+- [Caso de estudio en español](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/es/case-studies.html#sse)
+- [Estudo de caso em português](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/pt/case-studies.html#sse)
+- [Dated release evidence](https://github.com/saipradikmallakuntla-tech/zion-ai-apps-hub/blob/main/CASE_STUDIES_CYCLE_RELEASE.md)
+
+The hub documentation is fully available in EN/ES/PT; this utility interface remains English-only. Links carry no diagnostic input. This cycle changes only `index.html`, `README.md`, and `NETWORK.md` in this repository; `app.js` and `styles.css` are unchanged. Reference outcomes are synthetic and point-in-time, not an SLA, security certification, browser-conformance proof, or exactly-once guarantee.
