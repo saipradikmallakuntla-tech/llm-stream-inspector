@@ -1,139 +1,51 @@
 # LLM Stream Inspector
 
-A working, zero-dependency browser utility for saved LLM streams. It reconstructs OpenAI Chat Completions and Anthropic Messages text/tool-call deltas, checks final tool arguments as JSON, reports missing termination and malformed frames, and exports normalized diagnostics.
+A documented browser-local utility for supported saved LLM streams: inspect framing, reconstructed text, final tool-argument JSON and structural findings without executing tool arguments.
 
-**Live:** https://saipradikmallakuntla-tech.github.io/llm-stream-inspector/
+Documented live destination: [LLM Stream Inspector](https://saipradikmallakuntla-tech.github.io/llm-stream-inspector/). This link is not a fresh availability observation.
 
-## Run
-Open `index.html` directly, or serve this directory with any static server (for example `python3 -m http.server 8000`). No npm, bundler, API key, backend, or inference bill. GitHub Pages serves `main` at `/`; `.nojekyll` disables Jekyll processing.
+## Current editorial operations — 2026-11-15
 
-## Use
-1. Load one of five synthetic captures, paste SSE/NDJSON, or open a local file.
-2. Inspect reconstructed text, tool JSON, findings, reported usage, and event timeline.
-3. Export a content-omitting report by default. Including reconstructed content is an explicit checkbox; review before sharing.
-4. Use **Run built-in tests** for the synthetic regression suite.
+Batch: `zion-editorial-operations-2026-11-15-en-es-pt`.
 
-Timestamped NDJSON accepts one `{ "timestamp_ms": 1000, "data": { "choices": [...] } }` wrapper per line. Plain SSE does not contain reliable arrival times, so latency is unavailable rather than invented.
+This is a Markdown-only documentation and copywriting cycle covering this repository, zion-ai-apps-hub, agent-retry-safety-lab and cors-cookie-doctor. No HTML, CSS, JavaScript, engines, tests, configuration, Pages or DNS change. No browser, engine or test scripts run. Older results remain dated historical reports.
 
-## Files and tests
-- `index.html`: semantic interface, metadata, WebApplication JSON-LD, and satellite navigation.
-- `styles.css`: responsive, keyboard-visible, system-font styling.
-- `app.js`: dependency-free parser, provider adapters, fixtures, tests, safe DOM rendering and local exports.
-- `NETWORK.md`: network entry points and non-overlap boundaries.
-- `.nojekyll`: static publishing marker.
+- [Shared portfolio status, chronology and missing-evidence register](https://github.com/saipradikmallakuntla-tech/zion-ai-apps-hub/blob/main/PORTFOLIO_STATUS.md)
+- [Restoration sources, terminology and parity controls](https://github.com/saipradikmallakuntla-tech/zion-ai-apps-hub/blob/main/MULTILINGUAL_CONTENT_RESTORATION.md)
+- Complete editorial copy: [English](https://github.com/saipradikmallakuntla-tech/zion-ai-apps-hub/blob/main/content/en.md) · [Español](https://github.com/saipradikmallakuntla-tech/zion-ai-apps-hub/blob/main/content/es.md) · [Português](https://github.com/saipradikmallakuntla-tech/zion-ai-apps-hub/blob/main/content/pt.md)
+- [Local network and handoff guide](NETWORK.md)
 
-The engine also runs in Node without a DOM:
-```sh
-node -e "const a=require('./app.js'); const t=a.selfTest(); console.table(t); if(t.some(x=>!x.pass))process.exit(1)"
-```
+The utility interface remains **English-only**. EN/ES/PT describes the hub and editorial sources, not translated utility software. The new copy is editorial synthesis, not a verbatim claim about all historical web-page wording or a new QA receipt.
 
-## Privacy and limits
-No fetch/XHR, analytics, persistence, external assets, or model calls. Inputs remain in tab memory; downloads are user-initiated. Default exports omit raw content, tool names and IDs. This is not a comprehensive secret scanner. One MiB character / 10,000-event processing limits; imported file byte limit is one MiB. Timeline renders the first 200 events.
+## Documented use and supported boundary
 
-Supported adapters are specifically Chat Completions and Anthropic Messages, not every provider API (for example OpenAI Responses is not yet supported). A protocol terminal signal is not proof of semantic correctness or lossless capture. Tool JSON is never executed. No routing, model evaluation, or continuous telemetry platform is included.
+The source documentation describes a zero-dependency utility for saved SSE/NDJSON using OpenAI Chat Completions and Anthropic Messages adapters. Load a synthetic capture, paste approved sanitized data or open a local file. Inspect reconstructed text, final JSON, findings, reported usage and timeline. Review a content-omitting export before sharing; including reconstructed content is an explicit choice.
 
-## Network
-[Central hub](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/) · [Retry Safety Lab](https://saipradikmallakuntla-tech.github.io/agent-retry-safety-lab/) · [CORS & Cookie Doctor](https://saipradikmallakuntla-tech.github.io/cors-cookie-doctor/) · [Network documentation](NETWORK.md)
+Timestamped NDJSON can provide supplied timing. Plain SSE cannot establish reliable arrival latency, so unavailable is not zero. Supported adapters do not include every provider API; OpenAI Responses is outside the stated support. A terminal signal is not proof of a lossless capture or semantic correctness, and valid JSON is not tool authorization.
 
-The hub URL is owner-supplied; hub availability is independent of this app. No upstream Zion repository or DNS settings are modified by this project.
+Existing documentation describes one MiB character / 10,000-event processing bounds, a one MiB imported-file byte limit and a timeline limited to the first 200 events. It describes tab-local processing without fetch/XHR, analytics, persistence, external assets or model calls. Default exports omit raw content, tool names and IDs, but manual review is still required. This is not a comprehensive secret scanner, router, model evaluator or continuous monitoring service. These behaviors were not exercised in this editorial cycle.
 
-## Enterprise case studies and reliability benchmarks — 2026-11-15
+The existing static application can be opened directly or served by a static server; no mandatory package installation, API key or backend is documented. Runtime files, publishing configuration and existing built-in tests are left unchanged. This document introduces no test command or execution requirement.
 
-Illustrative deployment scenarios and reproducible synthetic diagnostics for the existing three utilities, not customer endorsements or production performance claims.
+## Manual cross-app handoffs
 
-- [English case study](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/case-studies.html#sse)
-- [Caso de estudio en español](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/es/case-studies.html#sse)
-- [Estudo de caso em português](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/pt/case-studies.html#sse)
-- [Dated release evidence](https://github.com/saipradikmallakuntla-tech/zion-ai-apps-hub/blob/main/CASE_STUDIES_CYCLE_RELEASE.md)
+- **Uncertain termination or repeated intent:** carry only adapter, event count, terminal state, finding codes and timestamp availability to [Retry documentation](https://github.com/saipradikmallakuntla-tech/agent-retry-safety-lab/blob/main/README.md). Model uncertainty and reconcile actual server state before replay.
+- **Browser response is hidden or cookies are uncertain:** carry only synthetic origin/site relationship, method, credential mode and policy findings to [CORS documentation](https://github.com/saipradikmallakuntla-tech/cors-cookie-doctor/blob/main/README.md). A hidden response does not prove no side effect.
 
-The hub documentation is fully available in EN/ES/PT; this utility interface remains English-only. Links carry no diagnostic input. This cycle changes only `index.html`, `README.md`, and `NETWORK.md` in this repository; `app.js` and `styles.css` are unchanged. Reference outcomes are synthetic and point-in-time, not an SLA, security certification, browser-conformance proof, or exactly-once guarantee.
+Do not execute captured arguments, automatically replay a mutation, transfer raw captures or encode evidence in links. Handoffs are manual and provide no shared state or automatic sanitizer.
 
-## Architecture and diagnostic continuation — 2026-11-15
+## Preserved historical scenarios and evidence
 
-Three practical checks for the existing engine, not new functionality or production guarantees:
+The detailed earlier case-study, architecture, diagnostic and Batch 22 recipes remain in the unchanged [NETWORK_PRE_BATCH_99.md archive](NETWORK_PRE_BATCH_99.md). This README consolidates current pointers instead of duplicating those historical sections. The [local restoration checkpoint](NETWORK_RESTORATION_BATCH.md) is also retained unchanged.
 
-### Capture boundary
-- **Setup:** Load the same synthetic SSE capture once intact and once with the final event removed.
-- **Expected finding:** Compare the protocol-terminal flag and framing findings, not just reconstructed text.
-- **Interpretation and limits:** A missing terminal suggests an incomplete or unsupported capture; a terminal does not prove that no event was lost or that the answer is correct.
+Shared records: [case-study report](https://github.com/saipradikmallakuntla-tech/zion-ai-apps-hub/blob/main/CASE_STUDIES_CYCLE_RELEASE.md), [unfinished interlink progress report](https://github.com/saipradikmallakuntla-tech/zion-ai-apps-hub/blob/main/NETWORK_INTERLINK_BATCH_RELEASE.md), and [diagnostics report](https://github.com/saipradikmallakuntla-tech/zion-ai-apps-hub/blob/main/DIAGNOSTICS_MATRIX_RELEASE.md). These contain dated reported observations, not freshly repeated checks.
 
-### Fragmented tool arguments
-- **Setup:** Inspect a synthetic supported Chat Completions or Anthropic tool-use capture; compare valid final JSON with a truncated argument fragment.
-- **Expected finding:** Read final JSON parsing findings alongside event ordering and the adapter label.
-- **Interpretation and limits:** JSON validity is structural, not tool authorization; arguments are never executed. Unsupported APIs must not be treated as successful.
+The referenced Batch 22 and Batch 99 final reports were absent from the captured hub tree. Their state and required follow-up are in the [portfolio evidence register](https://github.com/saipradikmallakuntla-tech/zion-ai-apps-hub/blob/main/PORTFOLIO_STATUS.md); no passing report is invented. Wider seven-node descriptions remain context only, not authorization to review or change additional repositories. Six historical roadmap candidates remain proposals.
 
-### Timing evidence
-- **Setup:** Compare a timestamped NDJSON wrapper with the same provider events supplied as plain SSE.
-- **Expected finding:** Latency is available only when supplied timing supports it; absent timestamps are not zero latency.
-- **Interpretation and limits:** Fixture timestamps are synthetic inputs, not measured production performance. Review any content-enabled export for secrets.
+## Navigation and safety
 
-### Continue through the owned network
-- [Inspect retry amplification](https://saipradikmallakuntla-tech.github.io/agent-retry-safety-lab/#diagnostic-notes)
-- [Inspect browser access and cookies](https://saipradikmallakuntla-tech.github.io/cors-cookie-doctor/#diagnostic-notes)
-- [Architecture and roadmap — English](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/changelog.html#architecture)
-- [Arquitectura y hoja de ruta — Español](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/es/changelog.html#architecture)
-- [Arquitetura e roteiro — Português](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/pt/changelog.html#architecture)
+[Hub documentation](https://github.com/saipradikmallakuntla-tech/zion-ai-apps-hub/blob/main/README.md) · [Retry documentation](https://github.com/saipradikmallakuntla-tech/agent-retry-safety-lab/blob/main/README.md) · [CORS documentation](https://github.com/saipradikmallakuntla-tech/cors-cookie-doctor/blob/main/README.md) · [Network guide](NETWORK.md)
 
-[Central hub](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/) · [Existing case studies](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/case-studies.html) · [Batch release evidence](https://github.com/saipradikmallakuntla-tech/zion-ai-apps-hub/blob/main/NETWORK_INTERLINK_BATCH_RELEASE.md)
+Live destinations, not fresh checks: [Hub](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/) · [Retry](https://saipradikmallakuntla-tech.github.io/agent-retry-safety-lab/) · [CORS](https://saipradikmallakuntla-tech.github.io/cors-cookie-doctor/).
 
-All six roadmap candidates remain proposals, not launched apps. Links carry no diagnostic inputs. EN/ES/PT parity applies to hub documentation; this utility interface remains English-only. This content-only batch preserves `app.js` and `styles.css`, existing showcases, and historical dated evidence. No third-party repository or Pages/DNS setting is changed.
-
-## Failure-mode diagnostics and cross-app triage — 2026-11-15
-
-Batch: `zion-diagnostics-matrix-2026-11-15-en-es-pt`.
-
-Use synthetic or approved sanitized evidence. Review summaries manually: sanitization is not automatic. Links carry no diagnostic inputs, uploads, or shared state. Hub guides have full EN/ES/PT coverage; this utility interface remains English-only.
-
-### Incomplete capture or repeated tool intent
-
-- **Trigger:** A terminal is missing or a tool intent appears repeated.
-- **Carry manually:** Adapter, event count, terminal state, finding codes, and timestamp availability only.
-- **Next action and limits:** Model response loss and stable intent keys before any replay. Reconcile actual server state; do not execute tool arguments or infer that a timeout means failure.
-- **Continue:** [Agent Retry Safety Lab](https://saipradikmallakuntla-tech.github.io/agent-retry-safety-lab/#diagnostic-notes)
-
-### Browser cannot expose the stream
-
-- **Trigger:** The browser cannot read the response or cookie eligibility is uncertain.
-- **Carry manually:** Synthetic origin/site relationship, method, credential mode, and policy finding codes; no capture body, tokens, or cookie values.
-- **Next action and limits:** Separate preflight/access from cookie eligibility. A request may have executed even when its response is hidden; the offline model is not a live browser test.
-- **Continue:** [CORS & Cookie Doctor](https://saipradikmallakuntla-tech.github.io/cors-cookie-doctor/#diagnostic-notes)
-
-### Matrix languages and reciprocal network
-
-- [Diagnostics matrix — English](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/diagnostics-matrix.html#triage-stream)
-- [Matriz de diagnóstico — Español](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/es/diagnostics-matrix.html#triage-stream)
-- [Matriz de diagnóstico — Português](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/pt/diagnostics-matrix.html#triage-stream)
-
-[Central hub](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/) · [Agent Retry Safety Lab](https://saipradikmallakuntla-tech.github.io/agent-retry-safety-lab/#diagnostic-notes) · [CORS & Cookie Doctor](https://saipradikmallakuntla-tech.github.io/cors-cookie-doctor/#diagnostic-notes)
-
-[Diagnostics cycle release evidence](https://github.com/saipradikmallakuntla-tech/zion-ai-apps-hub/blob/main/DIAGNOSTICS_MATRIX_RELEASE.md). Existing scenarios, case studies, architecture links, engines and styles are preserved. No third-party repository or Pages/DNS setting is changed.
-
-## Batch 22 — Production architecture integration
-
-Use an approved saved capture as the diagnostic boundary, not a live proxy. Compare complete and truncated synthetic fixtures; record adapter, terminal state, structural findings and timing availability only. Never execute captured tool arguments.
-
-If completion or repeated intent is uncertain, reconcile server state before modeling retry budgets. If the browser hides a response, analyze access and cookie policy separately; a hidden response does not prove failure.
-
-Carry only manually reviewed, synthetic summaries. Omit payloads, personal data, credentials, cookie values and real keys; never encode inputs in navigation URLs. Links transfer no data and provide no automatic sanitizer or shared backend. This utility interface remains English-only.
-
-- [Architecture recipes — English](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/architecture-patterns.html#recipe-stream)
-- [Recetas de arquitectura — Español](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/es/architecture-patterns.html#recipe-stream)
-- [Receitas de arquitetura — Português](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/pt/architecture-patterns.html#recipe-stream)
-
-[Central hub](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/) · [Agent Retry Safety Lab](https://saipradikmallakuntla-tech.github.io/agent-retry-safety-lab/#batch-22-integration) · [CORS & Cookie Doctor](https://saipradikmallakuntla-tech.github.io/cors-cookie-doctor/#batch-22-integration)
-
-[Batch-22 release evidence](https://github.com/saipradikmallakuntla-tech/zion-ai-apps-hub/blob/main/BATCH_22_CONTENT_RELEASE.md). Prior scenarios and links, analysis engines, styles, and Pages/DNS settings are preserved. No third-party repository is changed.
-
-
-## Batch 99 — expanded seven-node network
-
-This current expansion adds three independent browser-local utilities; all earlier dated notes above remain historical. The original analysis engine and stylesheet are unchanged. No third-party repositories, shared runtime, custom domains or diagnostic URL parameters are introduced.
-
-- [Zion AI Apps Hub](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/) · [source](https://github.com/saipradikmallakuntla-tech/zion-ai-apps-hub)
-- [Agent Retry Safety Lab](https://saipradikmallakuntla-tech.github.io/agent-retry-safety-lab/) · [source](https://github.com/saipradikmallakuntla-tech/agent-retry-safety-lab)
-- [CORS & Cookie Doctor](https://saipradikmallakuntla-tech.github.io/cors-cookie-doctor/) · [source](https://github.com/saipradikmallakuntla-tech/cors-cookie-doctor)
-- [Prompt Token Budget Lab](https://saipradikmallakuntla-tech.github.io/prompt-token-budget-lab/) · [source](https://github.com/saipradikmallakuntla-tech/prompt-token-budget-lab)
-- [Tool Schema Drift Auditor](https://saipradikmallakuntla-tech.github.io/tool-schema-drift-auditor/) · [source](https://github.com/saipradikmallakuntla-tech/tool-schema-drift-auditor)
-- [Webhook Replay Guard](https://saipradikmallakuntla-tech.github.io/webhook-replay-guard/) · [source](https://github.com/saipradikmallakuntla-tech/webhook-replay-guard)
-
-[Discovery EN](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/batch-99-discovery.html) · [ES](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/es/batch-99-discovery.html) · [PT](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/pt/batch-99-discovery.html). Use only sanitized, manually reviewed evidence. Copy/export/mailto drafts omit raw diagnostic inputs; no email is sent automatically. The full graph has seven repository nodes and 42 non-self directed links, not 42 apps. New estimates and simulations are not tokenization, compatibility, security or exactly-once guarantees. See the hub's `BATCH_99_NETWORK_EXPANSION_RELEASE.md` for dated evidence.
+Keep credentials, customer captures, personal data and raw payloads out of public examples and navigation URLs. Synthetic examples are not production benchmarks or endorsements. No monitoring, SLA, security/compliance certification, browser-conformance proof, semantic-correctness assurance or exactly-once guarantee is provided. No upstream registration, endorsement or third-party change is implied.
