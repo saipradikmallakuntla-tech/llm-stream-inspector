@@ -36,3 +36,10 @@ Earlier Batch 99 notes describe seven repositories/six utilities, additionally r
 The referenced Batch 22/99 release files were absent from the reviewed hub tree. Use the [evidence register](https://github.com/saipradikmallakuntla-tech/zion-ai-apps-hub/blob/main/PORTFOLIO_STATUS.md), not an unavailable report as proof. Preserve dated release caveats and request authentic missing evidence rather than inventing success.
 
 Each repository remains independent; this documentation introduces no backend, shared runtime, telemetry, persistence, model API or third-party changes. These aids provide no production benchmark, SLA, certification, semantic correctness, browser conformance or exactly-once guarantee. Private decisions and service receipts stay in approved private tracking.
+
+## Legal, Compliance & Care editorial and promotion package — 2026-11-15
+
+- [Editorial plan: audiences, claims, review gates and four-part calendar](https://github.com/saipradikmallakuntla-tech/zion-ai-apps-hub/blob/main/LEGAL_COMPLIANCE_CARE_EDITORIAL_PLAN.md)
+- [English, Spanish and Portuguese promotion copy and channel drafts](https://github.com/saipradikmallakuntla-tech/zion-ai-apps-hub/blob/main/LEGAL_COMPLIANCE_CARE_PROMOTION_COPY.md)
+
+Repository publication is authorized; promotional assets are published for review, not approved for distribution. Human language/domain sign-off remains pending. These are nine non-advisory documentation practices, not nine apps. This utility interface remains English-only. Existing source decks, historical archives and software are unchanged by this package.
