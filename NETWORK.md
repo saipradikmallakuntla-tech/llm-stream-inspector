@@ -39,3 +39,33 @@ Illustrative deployment scenarios and reproducible synthetic diagnostics for the
 - [Dated release evidence](https://github.com/saipradikmallakuntla-tech/zion-ai-apps-hub/blob/main/CASE_STUDIES_CYCLE_RELEASE.md)
 
 The hub documentation is fully available in EN/ES/PT; this utility interface remains English-only. Links carry no diagnostic input. This cycle changes only `index.html`, `README.md`, and `NETWORK.md` in this repository; `app.js` and `styles.css` are unchanged. Reference outcomes are synthetic and point-in-time, not an SLA, security certification, browser-conformance proof, or exactly-once guarantee.
+
+## Architecture and diagnostic continuation — 2026-11-15
+
+Three practical checks for the existing engine, not new functionality or production guarantees:
+
+### Capture boundary
+- **Setup:** Load the same synthetic SSE capture once intact and once with the final event removed.
+- **Expected finding:** Compare the protocol-terminal flag and framing findings, not just reconstructed text.
+- **Interpretation and limits:** A missing terminal suggests an incomplete or unsupported capture; a terminal does not prove that no event was lost or that the answer is correct.
+
+### Fragmented tool arguments
+- **Setup:** Inspect a synthetic supported Chat Completions or Anthropic tool-use capture; compare valid final JSON with a truncated argument fragment.
+- **Expected finding:** Read final JSON parsing findings alongside event ordering and the adapter label.
+- **Interpretation and limits:** JSON validity is structural, not tool authorization; arguments are never executed. Unsupported APIs must not be treated as successful.
+
+### Timing evidence
+- **Setup:** Compare a timestamped NDJSON wrapper with the same provider events supplied as plain SSE.
+- **Expected finding:** Latency is available only when supplied timing supports it; absent timestamps are not zero latency.
+- **Interpretation and limits:** Fixture timestamps are synthetic inputs, not measured production performance. Review any content-enabled export for secrets.
+
+### Continue through the owned network
+- [Inspect retry amplification](https://saipradikmallakuntla-tech.github.io/agent-retry-safety-lab/#diagnostic-notes)
+- [Inspect browser access and cookies](https://saipradikmallakuntla-tech.github.io/cors-cookie-doctor/#diagnostic-notes)
+- [Architecture and roadmap — English](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/changelog.html#architecture)
+- [Arquitectura y hoja de ruta — Español](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/es/changelog.html#architecture)
+- [Arquitetura e roteiro — Português](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/pt/changelog.html#architecture)
+
+[Central hub](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/) · [Existing case studies](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/case-studies.html) · [Batch release evidence](https://github.com/saipradikmallakuntla-tech/zion-ai-apps-hub/blob/main/NETWORK_INTERLINK_BATCH_RELEASE.md)
+
+All six roadmap candidates remain proposals, not launched apps. Links carry no diagnostic inputs. EN/ES/PT parity applies to hub documentation; this utility interface remains English-only. This content-only batch preserves `app.js` and `styles.css`, existing showcases, and historical dated evidence. No third-party repository or Pages/DNS setting is changed.
