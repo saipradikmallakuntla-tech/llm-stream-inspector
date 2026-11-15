@@ -43,3 +43,12 @@ Each repository remains independent; this documentation introduces no backend, s
 - [English, Spanish and Portuguese promotion copy and channel drafts](https://github.com/saipradikmallakuntla-tech/zion-ai-apps-hub/blob/main/LEGAL_COMPLIANCE_CARE_PROMOTION_COPY.md)
 
 Repository publication is authorized; promotional assets are published for review, not approved for distribution. Human language/domain sign-off remains pending. These are nine non-advisory documentation practices, not nine apps. This utility interface remains English-only. Existing source decks, historical archives and software are unchanged by this package.
+
+
+## Enterprise operations and translation parity — 2026-11-15 UTC
+
+Batch: `zion-multilingual-enterprise-operations-2026-11-15-en-es-pt`. [EN/ES/PT operational playbook](https://github.com/saipradikmallakuntla-tech/zion-ai-apps-hub/blob/main/MULTILINGUAL_ENTERPRISE_OPERATIONS.md) · [Translation parity register](https://github.com/saipradikmallakuntla-tech/zion-ai-apps-hub/blob/main/TRANSLATION_PARITY_REGISTER.md).
+
+Six matched O01–O06 sections extend the existing S01–S12/A01–A12 controls: 30 logical IDs and 90 locale entries. Written coverage is not human approval; language/domain review and channel-use approval remain pending. All three utility interfaces remain English-only.
+
+This append-only Markdown package announces no software change, new test result, campaign distribution or automatic synchronization. Preserve dated reports and archives; retain the [portfolio evidence and status register](https://github.com/saipradikmallakuntla-tech/zion-ai-apps-hub/blob/main/PORTFOLIO_STATUS.md).
