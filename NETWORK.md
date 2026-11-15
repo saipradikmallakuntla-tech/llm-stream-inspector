@@ -99,3 +99,19 @@ Use synthetic or approved sanitized evidence. Review summaries manually: sanitiz
 [Central hub](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/) · [Agent Retry Safety Lab](https://saipradikmallakuntla-tech.github.io/agent-retry-safety-lab/#diagnostic-notes) · [CORS & Cookie Doctor](https://saipradikmallakuntla-tech.github.io/cors-cookie-doctor/#diagnostic-notes)
 
 [Diagnostics cycle release evidence](https://github.com/saipradikmallakuntla-tech/zion-ai-apps-hub/blob/main/DIAGNOSTICS_MATRIX_RELEASE.md). Existing scenarios, case studies, architecture links, engines and styles are preserved. No third-party repository or Pages/DNS setting is changed.
+
+## Batch 22 — Production architecture integration
+
+Use an approved saved capture as the diagnostic boundary, not a live proxy. Compare complete and truncated synthetic fixtures; record adapter, terminal state, structural findings and timing availability only. Never execute captured tool arguments.
+
+If completion or repeated intent is uncertain, reconcile server state before modeling retry budgets. If the browser hides a response, analyze access and cookie policy separately; a hidden response does not prove failure.
+
+Carry only manually reviewed, synthetic summaries. Omit payloads, personal data, credentials, cookie values and real keys; never encode inputs in navigation URLs. Links transfer no data and provide no automatic sanitizer or shared backend. This utility interface remains English-only.
+
+- [Architecture recipes — English](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/architecture-patterns.html#recipe-stream)
+- [Recetas de arquitectura — Español](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/es/architecture-patterns.html#recipe-stream)
+- [Receitas de arquitetura — Português](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/pt/architecture-patterns.html#recipe-stream)
+
+[Central hub](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/) · [Agent Retry Safety Lab](https://saipradikmallakuntla-tech.github.io/agent-retry-safety-lab/#batch-22-integration) · [CORS & Cookie Doctor](https://saipradikmallakuntla-tech.github.io/cors-cookie-doctor/#batch-22-integration)
+
+[Batch-22 release evidence](https://github.com/saipradikmallakuntla-tech/zion-ai-apps-hub/blob/main/BATCH_22_CONTENT_RELEASE.md). Prior scenarios and links, analysis engines, styles, and Pages/DNS settings are preserved. No third-party repository is changed.
