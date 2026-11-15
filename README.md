@@ -77,3 +77,33 @@ Three practical checks for the existing engine, not new functionality or product
 [Central hub](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/) · [Existing case studies](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/case-studies.html) · [Batch release evidence](https://github.com/saipradikmallakuntla-tech/zion-ai-apps-hub/blob/main/NETWORK_INTERLINK_BATCH_RELEASE.md)
 
 All six roadmap candidates remain proposals, not launched apps. Links carry no diagnostic inputs. EN/ES/PT parity applies to hub documentation; this utility interface remains English-only. This content-only batch preserves `app.js` and `styles.css`, existing showcases, and historical dated evidence. No third-party repository or Pages/DNS setting is changed.
+
+## Failure-mode diagnostics and cross-app triage — 2026-11-15
+
+Batch: `zion-diagnostics-matrix-2026-11-15-en-es-pt`.
+
+Use synthetic or approved sanitized evidence. Review summaries manually: sanitization is not automatic. Links carry no diagnostic inputs, uploads, or shared state. Hub guides have full EN/ES/PT coverage; this utility interface remains English-only.
+
+### Incomplete capture or repeated tool intent
+
+- **Trigger:** A terminal is missing or a tool intent appears repeated.
+- **Carry manually:** Adapter, event count, terminal state, finding codes, and timestamp availability only.
+- **Next action and limits:** Model response loss and stable intent keys before any replay. Reconcile actual server state; do not execute tool arguments or infer that a timeout means failure.
+- **Continue:** [Agent Retry Safety Lab](https://saipradikmallakuntla-tech.github.io/agent-retry-safety-lab/#diagnostic-notes)
+
+### Browser cannot expose the stream
+
+- **Trigger:** The browser cannot read the response or cookie eligibility is uncertain.
+- **Carry manually:** Synthetic origin/site relationship, method, credential mode, and policy finding codes; no capture body, tokens, or cookie values.
+- **Next action and limits:** Separate preflight/access from cookie eligibility. A request may have executed even when its response is hidden; the offline model is not a live browser test.
+- **Continue:** [CORS & Cookie Doctor](https://saipradikmallakuntla-tech.github.io/cors-cookie-doctor/#diagnostic-notes)
+
+### Matrix languages and reciprocal network
+
+- [Diagnostics matrix — English](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/diagnostics-matrix.html#triage-stream)
+- [Matriz de diagnóstico — Español](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/es/diagnostics-matrix.html#triage-stream)
+- [Matriz de diagnóstico — Português](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/pt/diagnostics-matrix.html#triage-stream)
+
+[Central hub](https://saipradikmallakuntla-tech.github.io/zion-ai-apps-hub/) · [Agent Retry Safety Lab](https://saipradikmallakuntla-tech.github.io/agent-retry-safety-lab/#diagnostic-notes) · [CORS & Cookie Doctor](https://saipradikmallakuntla-tech.github.io/cors-cookie-doctor/#diagnostic-notes)
+
+[Diagnostics cycle release evidence](https://github.com/saipradikmallakuntla-tech/zion-ai-apps-hub/blob/main/DIAGNOSTICS_MATRIX_RELEASE.md). Existing scenarios, case studies, architecture links, engines and styles are preserved. No third-party repository or Pages/DNS setting is changed.
