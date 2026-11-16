@@ -52,3 +52,10 @@ Batch: `zion-multilingual-enterprise-operations-2026-11-15-en-es-pt`. [EN/ES/PT 
 Six matched O01–O06 sections extend the existing S01–S12/A01–A12 controls: 30 logical IDs and 90 locale entries. Written coverage is not human approval; language/domain review and channel-use approval remain pending. All three utility interfaces remain English-only.
 
 This append-only Markdown package announces no software change, new test result, campaign distribution or automatic synchronization. Preserve dated reports and archives; retain the [portfolio evidence and status register](https://github.com/saipradikmallakuntla-tech/zion-ai-apps-hub/blob/main/PORTFOLIO_STATUS.md).
+
+
+## Enterprise adoption briefs and cross-repository handoffs — 2026-11-16 UTC
+
+Batch: `zion-enterprise-adoption-handoff-2026-11-16-en-es-pt`. [Local Stream adoption brief B02, EN/neutral-ES/PT](ENTERPRISE_ADOPTION_BRIEF.md) · [Shared routing, minimum summaries, acknowledgment and stop rules H00–H06](https://github.com/saipradikmallakuntla-tech/zion-ai-apps-hub/blob/main/CROSS_REPOSITORY_HANDOFF_PLAN.md).
+
+Outgoing recipes are H01 Stream→Retry and H02 Stream→CORS; incoming recipes are H03 Retry→Stream and H06 CORS→Stream. Roles are proposed and not yet assigned; a link is not receiver acknowledgment. Carry only synthetic or authorized minimized summaries after manual review, never captured arguments for execution or state in URLs. Prior text remains dated history. Language/domain/channel gates stay pending; the interface remains English-only. This Markdown-only addition introduces no runtime integration, distribution, browser, hashing or test-script work.
