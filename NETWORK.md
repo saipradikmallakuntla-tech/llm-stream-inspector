@@ -59,3 +59,15 @@ This append-only Markdown package announces no software change, new test result,
 Batch: `zion-enterprise-adoption-handoff-2026-11-16-en-es-pt`. [Local Stream adoption brief B02, EN/neutral-ES/PT](ENTERPRISE_ADOPTION_BRIEF.md) · [Shared routing, minimum summaries, acknowledgment and stop rules H00–H06](https://github.com/saipradikmallakuntla-tech/zion-ai-apps-hub/blob/main/CROSS_REPOSITORY_HANDOFF_PLAN.md).
 
 Outgoing recipes are H01 Stream→Retry and H02 Stream→CORS; incoming recipes are H03 Retry→Stream and H06 CORS→Stream. Roles are proposed and not yet assigned; a link is not receiver acknowledgment. Carry only synthetic or authorized minimized summaries after manual review, never captured arguments for execution or state in URLs. Prior text remains dated history. Language/domain/channel gates stay pending; the interface remains English-only. This Markdown-only addition introduces no runtime integration, distribution, browser, hashing or test-script work.
+
+
+
+## Release chronicle and checkpoint continuity — 2026-11-16 UTC
+
+Batch: `zion-release-chronicle-continuity-2026-11-16-en-es-pt`. [Release chronicle — EN](https://github.com/saipradikmallakuntla-tech/zion-ai-apps-hub/blob/main/MULTILINGUAL_RELEASE_CHRONICLE.md#en) · [Crónica — ES](https://github.com/saipradikmallakuntla-tech/zion-ai-apps-hub/blob/main/MULTILINGUAL_RELEASE_CHRONICLE.md#es) · [Crônica — PT](https://github.com/saipradikmallakuntla-tech/zion-ai-apps-hub/blob/main/MULTILINGUAL_RELEASE_CHRONICLE.md#pt) · [Checkpoint continuity](https://github.com/saipradikmallakuntla-tech/zion-ai-apps-hub/blob/main/CHECKPOINT_CONTINUITY.md).
+
+R01–R10 add 30 written/pending locale entries to the preserved 41-ID/123-entry baseline: 51 logical IDs and 153 locale entries total, not approvals or products. The continuity guide is English operational text, not a translated asset. Earlier counts and current-view wording remain dated history.
+
+Continue through the [local adoption brief](ENTERPRISE_ADOPTION_BRIEF.md), [existing manual handoffs](https://github.com/saipradikmallakuntla-tech/zion-ai-apps-hub/blob/main/CROSS_REPOSITORY_HANDOFF_PLAN.md) and [portfolio evidence register](https://github.com/saipradikmallakuntla-tech/zion-ai-apps-hub/blob/main/PORTFOLIO_STATUS.md). The four-repository boundary, missing Batch 22/99 receipts and unfinished architecture evidence remain explicit. Utility interfaces remain English-only; human language/domain, receiver and channel decisions remain pending.
+
+This dated navigation appendix belongs to the approved 12-path Markdown-only package. Existing bodies, source decks, briefs, handoff recipes, archives and all non-Markdown files are preserved. No code or test scripts, hashes, browser checks, Mem0/Notion calls, automatic synchronization or external distribution are introduced. Actual publication/API read-back and the linked Supermemory receipt are recorded after execution, not inferred from these links.
